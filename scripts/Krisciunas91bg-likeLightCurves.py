@@ -1,10 +1,4 @@
-import matplotlib.pyplot as plt
-import numpy as np
-import sncosmo
-
-FILTER_WHEEL = ['u', 'g', 'r', 'i', 'B', 'V0']
-
-if __name__ == '__main__':
+def KrisciunasLightCurves():
     KrisciunasPath = "targetLists\\91bglike_justnames.txt"
     KrisciunasNames = np.genfromtxt(KrisciunasPath, dtype=str, delimiter=', ')
 
@@ -53,3 +47,4 @@ if __name__ == '__main__':
         # plt.savefig('save\\'+str(tar)+'.png')
         plt.show()
         break
+    return
